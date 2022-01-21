@@ -1,0 +1,124 @@
+arjun123@LAPTOP-5515TB74:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "hai"
+'hai'
+>>> 34+26
+60
+>>> 56*8
+448
+>>> 55//3
+18
+>>> 34%6
+4
+>>> no=1
+>>> if(no <10):
+...     printf(no, 'single digit')
+... else:
+...     print(no, 'multi digit')
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'printf' is not defined
+>>> no=20
+>>> if(no <10):
+...     print(no, 'single digit')
+... else:
+...     print(no, 'multi digit')
+...
+20 multi digit
+>>>
+>>>
+>>> names =['name1','name2','name3','name4']
+>>> names[3]
+'name4'
+>>> print(names[3])
+name4
+>>>
+>>>
+>>> for name in names:
+...     print(name)
+...
+name1
+name2
+name3
+name4
+>>> name = input("enter your name")
+enter your namearjun
+>>> print(name)
+arjun
+>>> x,y=0,1
+>>> n=10
+>>> while(x<n):
+...     print(x, end=' ')
+...     x,y=y,x+y
+...
+0 1 1 2 3 5 8 >>>
+>>>
+>>>
+>>> marks=98
+>>> if(marks<45):
+...     print('fail',marks)
+... elif(marks<50):
+...     print('c grade',marks)
+... elif(marks<70):
+...     print('b grade',marks)
+... elif(marks<90):
+...     print('a grade',marks)
+... else:
+...     print('a+ grade',marks)
+...
+a+ grade 98
+>>>
+>>>
+>>>
+>>> def calculate(no):
+...     if(no>100):
+...             print(no*no)
+...     else:
+...
+  File "<stdin>", line 5
+
+    ^
+IndentationError: expected an indented block
+>>> def calculate(no):
+...     if(no>100):
+...             print(no*no)
+...     else:
+...             print(no+no)
+...
+>>> calculate(200)
+40000
+>>> calculate(70)
+140
+>>>
+>>>
+>>>
+>>> class student:
+...     def setstudent(self,id,name,course):
+...             self.id=id
+...             self.name=name
+...             self.course=course
+...     def getstudent(self):
+...             print(self.id, " ", self.name, " ", self.course)
+...
+>>> std = student()
+>>> std.setstudent(123,"wincy","python")
+>>> std.getstudent()
+123   wincy   python
+>>>
+>>>
+>>>
+>>> from math import *
+>>> a =pi
+>>> print(a)
+3.141592653589793
+>>> print(sqrt(64))
+8.0
+>>> print(pow(2,3))
+8.0
+>>> print(round(255.368))
+255
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit

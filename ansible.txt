@@ -1,0 +1,168 @@
+arjun123@LAPTOP-5515TB74:~$ sudo apt update
+[sudo] password for arjun123:
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease [18.0 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 Packages [1132 B]
+Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1509 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [296 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [736 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1177 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [105 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [893 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [196 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.0 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.5 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.4 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [672 B]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [210 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9100 B]
+Get:21 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [686 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [97.9 kB]
+Get:23 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:24 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [115 kB]
+Get:25 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Fetched 7140 kB in 9s (820 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+97 packages can be upgraded. Run 'apt list --upgradable' to see them.
+arjun123@LAPTOP-5515TB74:~$ sudo apt install software-properties-common
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 97 not upgraded.
+arjun123@LAPTOP-5515TB74:~$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+Hit:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done
+arjun123@LAPTOP-5515TB74:~$ sudo apt install ansible
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be upgraded:
+  ansible
+1 upgraded, 0 newly installed, 0 to remove and 96 not upgraded.
+Need to get 21.5 MB of archives.
+After this operation, 913 kB of additional disk space will be used.
+Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible all 5.2.0-1ppa~focal [21.5 MB]
+Fetched 21.5 MB in 8s (2747 kB/s)
+(Reading database ... 76816 files and directories currently installed.)
+Preparing to unpack .../ansible_5.2.0-1ppa~focal_all.deb ...
+Unpacking ansible (5.2.0-1ppa~focal) over (5.1.0-1ppa~focal) ...
+Setting up ansible (5.2.0-1ppa~focal) ...
+arjun123@LAPTOP-5515TB74:~$ ansible all -m ping --ask-pass
+SSH password:
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+arjun123@LAPTOP-5515TB74:~$ ansible -m ping --ask-pass
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K]
+               [-i INVENTORY] [--list-hosts] [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k]
+               [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER] [-c CONNECTION] [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS] [-C] [--syntax-check] [-D]
+               [-e EXTRA_VARS] [--vault-id VAULT_IDS]
+               [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS] [-M MODULE_PATH]
+               [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+ansible: error: the following arguments are required: pattern
+
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K]
+               [-i INVENTORY] [--list-hosts] [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k]
+               [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER] [-c CONNECTION] [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS] [-C] [--syntax-check] [-D]
+               [-e EXTRA_VARS] [--vault-id VAULT_IDS]
+               [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS] [-M MODULE_PATH]
+               [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --list-hosts          outputs a list of matching hosts; does not execute anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a substitute playbook directory.This sets
+                        the relative path for many features including roles/ group_vars/ etc.
+  --syntax-check        perform a syntax check on the playbook, but do not execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location, configured module search path, module
+                        location, executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the differences in those files; works great
+                        with --check
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated path(s) to module library
+                        (default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in space separated k=v format: -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel processes to use (default=5)
+  -h, --help            show this help message and exit
+  -i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path or comma separated host list. --inventory-file is deprecated
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable connection debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method to use (default=sudo), use `ansible-doc -t become -l` to list
+                        valid choices.
+  --become-user BECOME_USER
+                        run operations as this user (default=root)
+  -K, --ask-become-pass
+                        ask for privilege escalation password
+  -b, --become          run operations with become (does not imply password prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g. -f, -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection timeout in seconds (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use (default=smart)
+  -k, --ask-pass        ask for connection password
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user (default=None)
+
+Some actions do not make sense in Ad-Hoc (include, meta, etc)
+

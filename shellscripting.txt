@@ -1,0 +1,174 @@
+arjun123@LAPTOP-5515TB74:~$ echo $SHELL
+/bin/bash
+arjun123@LAPTOP-5515TB74:~$ echo hello world
+hello world
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ cat file.sh
+hi welcome to shell scripting
+arjun123@LAPTOP-5515TB74:~$ chmod +x file.sh
+arjun123@LAPTOP-5515TB74:~$ ./file.sh
+./file.sh: line 1: hi: command not found
+arjun123@LAPTOP-5515TB74:~$ nano file.sh
+arjun123@LAPTOP-5515TB74:~$ chmod +x file.sh
+arjun123@LAPTOP-5515TB74:~$ ./file.sh
+./file.sh: line 2: hi: command not found
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ ./script.sh
+hi
+Hashmum                bootcamp          fsam.txt         madhuri               myfilewithvars.sh  script.sh
+InitialHashmum         car.txt           games.txt        main.yml              myinfo.txt         second.sh
+_alias                 demo_func.sh      hellofile.txt    mango.sh              names.sh           selfile.sh
+abclmpex               details.sh        helloscript.sh   mani.txt              oddprint.sh        socker
+abdul_orchestrate.yml  elif.sh           helloworld.sh    mobile.txt            parameter.sh       stdrecord.yml
+abdul_playbook         evenodd.sh        if.sh            mull.sh               parents            stld
+abdulrole              exampleread.sh    ifelse.sh        multiargumentfunc.sh  phone.sh           tab.txt
+args.sh                favour.sh         initialgalaxy    multicontnet..txt     pocker             tempy
+arjun1                 favouritefood.sh  input.sh         multiples.sh          primee.sh          tempy2
+arjun_playbook         fibonacci.sh      lappi.sh         mycmds.sh             read.sh            trainees.txt
+bash                   file.sh           lappi.txt        mycommands.sh         samb.sh            vardemo.sh
+bash_aliases.sh        fordemo.sh        linux_tweet_app  myfile                sambi              whiledemo.sh
+bike                   friend.sh         looparray.sh     myfile.sh             sambi.txt          y
+blue                   frnd.sh           lorry            myfile.txt            sana_playbook      zing
+list
+sambi,guntur
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ ./state.sh
+-bash: ./state.sh: Permission denied
+arjun123@LAPTOP-5515TB74:~$ chmod 774 state.sh
+arjun123@LAPTOP-5515TB74:~$ ./state.sh
+what is ur name :
+sambi
+what is ur loc :
+guntur
+what is ur state :
+ap
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod 774 .bash_aliases.sh
+arjun123@LAPTOP-5515TB74:~$ ./.bash_aliases.sh
+./.bash_aliases.sh: line 1: alias: ll: not found
+./.bash_aliases.sh: line 1: alias: =: not found
+./.bash_aliases.sh: line 1: alias: ls -l: not found
+./.bash_aliases.sh: line 2: alias: la: not found
+./.bash_aliases.sh: line 2: alias: =: not found
+./.bash_aliases.sh: line 2: alias: ls -a: not found
+./.bash_aliases.sh: line 3: alias: li: not found
+./.bash_aliases.sh: line 3: alias: =: not found
+./.bash_aliases.sh: line 3: alias: ls -lh: not found
+./.bash_aliases.sh: line 4: alias: rk: not found
+./.bash_aliases.sh: line 4: alias: =: not found
+./.bash_aliases.sh: line 4: alias: rm -i: not found
+arjun123@LAPTOP-5515TB74:~$ dir
+Hashmum                car.txt           hellofile.txt    mani.txt              parameter.sh   stdrecord.yml
+InitialHashmum         demo_func.sh      helloscript.sh   mobile.txt            parents        stld
+_alias                 details.sh        helloworld.sh    mull.sh               phone.sh       tab.txt
+abclmpex               elif.sh           if.sh            multiargumentfunc.sh  pocker         tempy
+abdul_orchestrate.yml  evenodd.sh        ifelse.sh        multicontnet..txt     primee.sh      tempy2
+abdul_playbook         exampleread.sh    initialgalaxy    multiples.sh          read.sh        trainees.txt
+abdulrole              favour.sh         input.sh         mycmds.sh             samb.sh        vardemo.sh
+args.sh                favouritefood.sh  lappi.sh         mycommands.sh         sambi          whiledemo.sh
+arjun1                 fibonacci.sh      lappi.txt        myfile                sambi.txt      y
+arjun_playbook         file.sh           linux_tweet_app  myfile.sh             sana_playbook  zing
+bash                   fordemo.sh        looparray.sh     myfile.txt            script.sh
+bash_aliases.sh        friend.sh         lorry            myfilewithvars.sh     second.sh
+bike                   frnd.sh           madhuri          myinfo.txt            selfile.sh
+blue                   fsam.txt          main.yml         names.sh              socker
+bootcamp               games.txt         mango.sh         oddprint.sh           state.sh
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod 774 parameters.sh
+arjun123@LAPTOP-5515TB74:~$ ./parameters.sh
+the script title is ./parameters.sh
+1st arg is
+2nd arg is
+3rd arg is
+/$ 1433 is the pid of the script
+/# the total no of parameters in the script 0
+arjun123@LAPTOP-5515TB74:~$ ./parameters.sh 3 4 5 6 7
+the script title is ./parameters.sh
+1st arg is 3
+2nd arg is 4
+3rd arg is 5
+/$ 1434 is the pid of the script
+/# the total no of parameters in the script 5
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod 774 ifelsee.sh
+arjun123@LAPTOP-5515TB74:~$ ./ifelsee.sh
+enter a pet animal
+monkey
+I like monkey
+arjun123@LAPTOP-5515TB74:~$ ./ifelsee.sh
+enter a pet animal
+dogs
+I like dogs
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod frutt.sh
+chmod: missing operand after ‘frutt.sh’
+Try 'chmod --help' for more information.
+arjun123@LAPTOP-5515TB74:~$ chmod 774 frutt.sh
+arjun123@LAPTOP-5515TB74:~$ ./frutt.sh
+enter a fruit name
+kiwi
+./frutt.sh: line 10: unexpected EOF while looking for matching `"'
+./frutt.sh: line 13: syntax error: unexpected end of file
+arjun123@LAPTOP-5515TB74:~$ nano frutt.sh
+arjun123@LAPTOP-5515TB74:~$ chmod 774 frutt.sh
+arjun123@LAPTOP-5515TB74:~$ ./frutt.sh
+arjun123@LAPTOP-5515TB74:~$ chmod 774 frutt.sh
+arjun123@LAPTOP-5515TB74:~$ ./frutt.sh
+enter a fruit name0: syntax error near unexpected token `then'
+./frutt.sh: line 10: `  then echo "i also love this $fruit"'
+./frutt.sh: line 4: [: =: unary operator expected
+./frutt.sh: line 6: [: =: unary operator expected
+./frutt.sh: line 8: [: =: unary operator expected
+i also love this
+arjun123@LAPTOP-5515TB74:~$ chmod 774 frutt.sh
+arjun123@LAPTOP-5515TB74:~$ ./frutt.sh
+enter a fruit name
+kiwi
+i like kiwi
+arjun123@LAPTOP-5515TB74:~$ ./frutt.sh
+enter a fruit name
+orange
+i like orange
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod 774 for.sh
+arjun123@LAPTOP-5515TB74:~$ ./for.sh
+./for.sh: line 2: syntax error near unexpected token `('
+./for.sh: line 2: `r((c=1;c<5;c++))'
+arjun123@LAPTOP-5515TB74:~$ nano for.sh
+arjun123@LAPTOP-5515TB74:~$ chmod 774 for.sh
+arjun123@LAPTOP-5515TB74:~$ ./for.sh
+./for.sh: line 2: syntax error near unexpected token `('
+./for.sh: line 2: `r((c=1;c<5;c++))'
+arjun123@LAPTOP-5515TB74:~$ nano for.sh
+arjun123@LAPTOP-5515TB74:~$ chmod 774 for.sh
+arjun123@LAPTOP-5515TB74:~$ ./for.sh
+enter some no
+23
+welcome 1 time 23
+enter some no
+14
+welcome 2 time 14
+enter some no
+34
+welcome 3 time 34
+enter some no
+33
+welcome 4 time 33
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod 774 whilee.sh
+arjun123@LAPTOP-5515TB74:~$ ./whilee.sh
+demo of while loop
+no is 1
+no is 2
+no is 3
+no is 4
+arjun123@LAPTOP-5515TB74:~$ nano
+arjun123@LAPTOP-5515TB74:~$ chmod 774 fun.sh
+arjun123@LAPTOP-5515TB74:~$ ./fun.sh
+function with arguments demo
+hi,
+hello,
+arjun123@LAPTOP-5515TB74:~$ ./fun.sh sambi ravi
+function with arguments demo
+hi,sambi
+hello,ravi
